@@ -7,12 +7,13 @@ public class Script_ObjectPool_Cube : MonoBehaviour
     [SerializeField] GameObject Cube;
     [SerializeField] private int Amount;
     private List<GameObject> ObjectPools = new List<GameObject>();
+    
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
-      }   
+        }
     }
     void Start()
     {
@@ -29,7 +30,7 @@ public class Script_ObjectPool_Cube : MonoBehaviour
     {
         for (int i = 0; i < ObjectPools.Count; i++)
         {
-            if (ObjectPools[i].activeInHierarchy)
+            if (!ObjectPools[i].activeInHierarchy)
             {
                 return ObjectPools[i];
             }
