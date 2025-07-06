@@ -11,6 +11,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
     /// </summary>
     public class DynamicMoveProvider : ContinuousMoveProvider
     {
+        
         /// <summary>
         /// Defines which transform the XR Origin's movement direction is relative to.
         /// </summary>
@@ -33,7 +34,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         [SerializeField]
         [Tooltip("Directs the XR Origin's movement when using the head-relative mode. If not set, will automatically find and use the XR Origin Camera.")]
         Transform m_HeadTransform;
-
+        
         /// <summary>
         /// Directs the XR Origin's movement when using the head-relative mode. If not set, will automatically find and use the XR Origin Camera.
         /// </summary>
